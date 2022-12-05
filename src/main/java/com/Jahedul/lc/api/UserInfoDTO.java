@@ -1,9 +1,11 @@
 package com.Jahedul.lc.api;
 
-public class UserInfoDTO {
+import javax.validation.constraints.NotBlank;
 
-    private String userName = "Mr/Mrs. X";
-    private String friendName = "Mr/Mrs. Y";
+public class UserInfoDTO {
+    @NotBlank(message = " * Your name Please! :)")
+    private String userName;
+    private String friendName;
 
     public String getFriendName() {
         return friendName;

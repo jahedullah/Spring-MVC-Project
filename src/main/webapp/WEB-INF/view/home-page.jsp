@@ -3,6 +3,8 @@
 <html>
 <head>
 <title>Homepage</title>
+
+
 </head>
 
 
@@ -14,12 +16,14 @@
         <div align="center">
             <p>
                 <label for="yn">Your Name :</label>
-                <form:input type="text" id="yn" path = "userName"/>
+                <form:input id="yn" path = "userName"/>
+                <form:errors path="userName" />
             </p>
 
             <p>
                 <label for="fn">Friend Name :</label>
-                <form:input type="text" id="fn" path = "friendName"/>
+                <form:input id="fn" path="friendName"/>
+
             </p>
 
             <input type="submit" value="calculate">
